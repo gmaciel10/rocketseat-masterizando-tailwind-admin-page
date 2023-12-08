@@ -70,6 +70,7 @@ export default function Home() {
             <label htmlFor="portfolioProjects" className="text-sm font-medium text-zinc-700">Portfolio Projects<span className="text-sm mt-0.5 text-zinc-500 font-normal block">Share a few snippets of your work.</span></label>
             <FileInput.Root>
               <FileInput.Trigger />
+              <FileInput.FileList />
               <FileInput.Control multiple/>
             </FileInput.Root>
           </div>
