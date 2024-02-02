@@ -1,7 +1,10 @@
 import { SettingsTabs } from "./components/SettingsTabs";
 import * as Input from "./components/Form/Input"
-import { Mail } from "lucide-react";
+import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
 import * as FileInput from "./components/Form/FileInput/index";
+import { Select } from "./components/Form/Select";
+import { SelectItem } from "./components/Form/Select/SelectItem";
+import { Textarea } from "./components/Form/Textarea";
 
 export default function Home() {
   return (
@@ -56,22 +59,52 @@ export default function Home() {
           </div>
           <div className="grid gap-8 grid-cols-form pt-5">
             <label htmlFor="country" className="text-sm font-medium text-zinc-700">Country</label>
-
+            <Select placeholder="Select a country...">
+              <SelectItem text="Brazil" value="br" />
+              <SelectItem text="Chile" value="ch" />
+              <SelectItem text="Argentina" value="Ag" />
+            </Select>
           </div>
           <div className="grid gap-8 grid-cols-form pt-5">
             <label htmlFor="timeZone" className="text-sm font-medium text-zinc-700">Timezone</label>
-
+            <Select placeholder="Select a timezone...">
+              <SelectItem text="Standerd UT -3" value="ut-3" />
+            </Select>
           </div>
           <div className="grid gap-8 grid-cols-form pt-5">
             <label htmlFor="bio" className="text-sm font-medium text-zinc-700">Bio<span className="text-sm mt-0.5 text-zinc-500 font-normal block">Write a short introduction.</span></label>
-
+            <div className="space-y-3">
+              <div className="grid gap-3 grid-cols-2">
+                <Select placeholder="" defaultValue="normal">
+                  <SelectItem defaultChecked text="Normal Text" value="normal" />
+                </Select>
+                <div className="flex items-center gap-1">
+                  <button type="button" className="px-2 hover:bg-zinc-50 rounded-md">
+                    <Bold className="h-4 w-4 text-zinc-500" />
+                  </button>
+                  <button type="button" className="px-2 hover:bg-zinc-50 rounded-md">
+                    <Italic className="h-4 w-4 text-zinc-500" />
+                  </button>
+                  <button type="button" className="px-2 hover:bg-zinc-50 rounded-md">
+                    <Link className="h-4 w-4 text-zinc-500" />
+                  </button>
+                  <button type="button" className="px-2 hover:bg-zinc-50 rounded-md">
+                    <List className="h-4 w-4 text-zinc-500" />
+                  </button>
+                  <button type="button" className="px-2 hover:bg-zinc-50 rounded-md">
+                    <ListOrdered className="h-4 w-4 text-zinc-500" />
+                  </button>
+                </div>
+              </div>
+              <Textarea />
+            </div>
           </div>
           <div className="grid gap-8 grid-cols-form pt-5">
             <label htmlFor="portfolioProjects" className="text-sm font-medium text-zinc-700">Portfolio Projects<span className="text-sm mt-0.5 text-zinc-500 font-normal block">Share a few snippets of your work.</span></label>
             <FileInput.Root>
               <FileInput.Trigger />
               <FileInput.FileList />
-              <FileInput.Control multiple/>
+              <FileInput.Control multiple />
             </FileInput.Root>
           </div>
           <div className="flex items-center justify-end gap-2 pt-5">

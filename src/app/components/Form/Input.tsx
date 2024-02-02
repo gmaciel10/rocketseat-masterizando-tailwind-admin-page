@@ -3,7 +3,7 @@ import { ComponentProps } from "react";
 type RootProps = ComponentProps<'div'>;
 
 export function Root(props: RootProps) {
-  return <div className="flex mx-1 w-full border items-center gap-2 border-zinc-300 rounded-lg py-2 px-3 shadow-sm" {...props} />
+  return <div className="flex w-full border items-center gap-2 border-zinc-300 rounded-lg py-2 px-3 shadow-sm" {...props} />
 
 }
 
