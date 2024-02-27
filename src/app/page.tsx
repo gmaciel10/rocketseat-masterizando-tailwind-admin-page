@@ -1,10 +1,11 @@
-import { SettingsTabs } from "./components/SettingsTabs";
-import * as Input from "./components/Form/Input"
-import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
-import * as FileInput from "./components/Form/FileInput/index";
-import { Select } from "./components/Form/Select";
-import { SelectItem } from "./components/Form/Select/SelectItem";
-import { Textarea } from "./components/Form/Textarea";
+import { SettingsTabs } from './components/SettingsTabs'
+import * as Input from './components/Form/Input'
+import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
+import * as FileInput from './components/Form/FileInput/index'
+import { Select } from './components/Form/Select'
+import { SelectItem } from './components/Form/Select/SelectItem'
+import { Textarea } from './components/Form/Textarea'
+import { Button } from './components/Button'
 
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
             <span className="text-sm text-zinc-500">Update your photo and personal details here.</span>
           </div>
           <div className="flex items-center gap-2">
-            <button type="submit" className="px-4 py-2 font-semibold text-sm text-zinc-700 border border-zinc-300 rounded-lg hover:bg-zinc-50">Canel</button>
-            <button type="submit" form="settings" className="px-4 py-2 font-semibold text-sm text-white bg-violet-600 border border-violet-600 rounded-lg hover:bg-violet-700">Save</button>
+            <Button type="submit" variant='ouline'>Canel</Button>
+            <Button type="submit" form="settings" variant='primary'>Save</Button>
           </div>
         </div>
         <form action="" id="settings" className="flex w-full flex-col gap-5 divide-y divde-zinc-200">
@@ -108,8 +109,8 @@ export default function Home() {
             </FileInput.Root>
           </div>
           <div className="flex items-center justify-end gap-2 pt-5">
-            <button type="submit" className="px-4 py-2 font-semibold text-sm text-zinc-700 border border-zinc-300 rounded-lg hover:bg-zinc-50">Canel</button>
-            <button type="submit" form="settings" className="px-4 py-2 font-semibold text-sm text-white bg-violet-600 border border-violet-600 rounded-lg hover:bg-violet-700">Save</button>
+            <Button type="submit" variant='ouline'>Canel</Button>
+            <Button type="submit" form="settings" variant='primary'>Save</Button>
           </div>
         </form>
       </div>
