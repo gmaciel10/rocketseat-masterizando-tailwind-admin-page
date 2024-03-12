@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-next",
+  "name": "tailwind",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,38 +8,36 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "devDependencies": {
-    "@rocketseat/eslint-config": "^2.2.2",
-    "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "eslint": "^8.0.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-config-standard-with-typescript": "^43.0.1",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.33.2",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.4"
-  },
   "dependencies": {
-    "@formkit/auto-animate": "^0.8.1",
-    "@radix-ui/react-collapsible": "^1.0.3",
-    "@radix-ui/react-scroll-area": "^1.0.5",
-    "@radix-ui/react-select": "^2.0.0",
-    "@radix-ui/react-tabs": "^1.0.4",
-    "@types/node": "20.5.9",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.15",
-    "eslint-config-next": "13.4.19",
-    "framer-motion": "^10.16.5",
-    "lucide-react": "^0.274.0",
-    "next": "13.4.19",
-    "postcss": "8.4.29",
+    "@radix-ui/react-collapsible": "1.0.3",
+    "@radix-ui/react-scroll-area": "1.0.4",
+    "@radix-ui/react-select": "1.2.2",
+    "@radix-ui/react-slot": "1.0.2",
+    "@radix-ui/react-tabs": "1.0.4",
+    "classnames": "^2.5.1",
+    "framer-motion": "10.12.16",
+    "lucide-react": "0.244.0",
+    "next": "13.4.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwind-variants": "^0.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "*"
+    "react-world-flags": "1.5.1",
+    "tailwind-merge": "1.13.2",
+    "tailwind-variants": "0.1.8"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "1.2.0",
+    "@tailwindcss/forms": "0.5.3",
+    "@types/node": "20.3.0",
+    "@types/react": "18.2.11",
+    "@types/react-dom": "18.2.4",
+    "@types/react-world-flags": "1.4.2",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.5",
+    "postcss": "8.4.24",
+    "prettier-plugin-tailwindcss": "0.3.0",
+    "tailwind-scrollbar": "3.0.4",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.1.3"
   }
 }
